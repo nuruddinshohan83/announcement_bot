@@ -1,4 +1,7 @@
-import { createClient } from '@supabase/supabase-js'
+const { createClient } = require("@supabase/supabase-js")
 
-// Create a single supabase client for interacting with your database 
-const supabase = createClient('https://xyzcompany.supabase.co', 'public-anon-key')
+const supabase = createClient(
+    "https://llfqwsmktbsnmxkdzvip.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzNzY5OTM0MywiZXhwIjoxOTUzMjc1MzQzfQ.gfdNb1WTqhR_qj7PGvIA2Y3w94_66xdZDDuGqjGusOM"
+)
+module.exports = supabase
